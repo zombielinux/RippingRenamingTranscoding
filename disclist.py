@@ -2,7 +2,7 @@ import discid
 import pymysql
 import getpass
 
-db = pymysql.connect(host="localhost", user="will", passwd="Bamboo123", db="CD_Database", autocommit=True)
+db = pymysql.connect(host="localhost", user="notmyrealuser", passwd="nopassforyou", db="CD_Database", autocommit=True)
 cur = db.cursor()
 
 disc = discid.read("/dev/cdrom",features=["mcn"])
